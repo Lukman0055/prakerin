@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kota;
 use App\Models\Kecamatan;
+use App\Http\Controllers\DB;
 use Illuminate\Http\Request;
 
 class KecamatanController extends Controller
@@ -14,7 +16,7 @@ class KecamatanController extends Controller
      */
     public function index()
     {
-        $kecamatan = Kecamatan::all();
+        $kecamatan = Kecamatan::with('kota')->get();
         return view('kecamatan.index', compact('kecamatan'));
     }
 

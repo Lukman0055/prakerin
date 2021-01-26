@@ -13,6 +13,6 @@ class Provinsi extends Model
     public $timestamps = true;
 
     public function Kota(){
-        return $this->hasMany('App\Kota', 'id_provinsi');
+        return $this->hasMany('App\Models\Kota', 'id_provinsi');
     }
 }

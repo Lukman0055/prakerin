@@ -9,10 +9,14 @@ class Kelurahan extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id_kecamatan','nama_kelurahan'];
+    protected $fillable = ['nama_kelurahan'];
     public $timestamps = true;
 
     public function Rw(){
-        return $this->hasMany(Rw::class);
+        return $this->hasMany('App\Models\Rw','id_rw');
+    }
+
+    public function Kecamatan(){
+        return $this->belongsTo('App\Models\Kecamatan', 'id_kecamatan');
     }
 }

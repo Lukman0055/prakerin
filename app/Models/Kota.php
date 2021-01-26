@@ -13,10 +13,10 @@ class Kota extends Model
     public $timestamps = true;
 
     public function Provinsi(){
-        return $this->belongsTo('App\Provinsi','id_provinsi');
+        return $this->belongsTo('App\Models\Provinsi','id_provinsi');
     }
     
     public function Kecamatan(){
-        return $this->hasMany('App\Kecamatan', 'id_kota');
+        return $this->hasMany('App\Models\Kecamatan', 'id_kota');
     }
 }
