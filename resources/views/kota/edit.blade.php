@@ -20,6 +20,20 @@
                             <input type="text" name="kode_kota" value="{{$kota->kode_kota}}" class="form-control" required>
                         </div>
                         <div class="form-group">
+                            <label for="">Provinsi</label>
+                            <select name="id_provinsi" class="form-control" id="">
+                                @foreach($provinsi as $data)
+                                <option value="{{$data->id}}"
+                                @if($data->nama_provinsi == $kota->provinsi->nama_provinsi)
+                                    selected
+                                @endif
+                                >
+                                {{$data->nama_provinsi}}
+                                </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <button type="submit" class="btn btn-primary">Simpan</button>
                             <a href="{{url()->previous()}}" class="btn btn-success">Kembali</a>
 

@@ -11,7 +11,7 @@
                     @csrf
                     <div class="form-group">
                         <label for="">Kota</label>
-                        <input type="text" name="nama_kota" value="{{$kecamatan->id_kota}}" class="form-control" readonly>
+                        <input type="text" name="nama_kota" value="{{$kecamatan->kota->nama_kota}}" class="form-control" readonly>
                     </div>
                     <div class="form-group">
                         <label for="">Nama Kecamatan</label>

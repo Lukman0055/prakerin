@@ -27,7 +27,8 @@ class KecamatanController extends Controller
      */
     public function create()
     {
-        return view('kecamatan.create');
+        $kota = Kota::all();
+        return view('kecamatan.create', compact('kota'));
     }
 
     /**
@@ -39,8 +40,8 @@ class KecamatanController extends Controller
     public function store(Request $request)
     {
         $kecamatan = new Kecamatan();
-        $kecamatan->kode_provinsi = $request->kode_provinsi;
-        $kecamatan->nama_provinsi = $request->nama_provinsi;
+        $kecamatan->nama_kecamatan = $request->nama_kecamatan;
+        $kecamatan->id_kota = $request->id_kota;
         $kecamatan->save();
         return redirect()->route('kecamatan.index')->with(['message'=>'Kecamatan berhasil dibuat']);
     }
@@ -66,7 +67,8 @@ class KecamatanController extends Controller
     public function edit($id)
     {
         $kecamatan = Kecamatan::findOrFail($id);
-        return view('kecamatan.edit',compact('kecamatan'));
+        $kota = Kota::all();
+        return view('kecamatan.edit', compact('kota','kecamatan'));
     }
 
     /**
@@ -79,10 +81,10 @@ class KecamatanController extends Controller
     public function update(Request $request, $id)
     {
         $kecamatan = Kecamatan::findOrFail($id);
-        $kecamatan->nama_provinsi = $request->nama_provinsi;
-        $kecamatan->kode_provinsi = $request->kode_provinsi;
+        $kecamatan->nama_kecamatan = $request->nama_kecamatan;
+        $kecamatan->id_kota = $request->id_kota;
         $kecamatan->save();
-        return redirect()->route('$kecamatan.index')->with(['message'=>'Kecamatan berhasil di edit']);
+        return redirect()->route('kecamatan.index')->with(['message'=>'Kecamatan berhasil di edit']);
     }
 
     /**

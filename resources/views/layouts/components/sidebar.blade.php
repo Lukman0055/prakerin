@@ -206,6 +206,12 @@
                   <p>Rw</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Kasus</p>
+                </a>
+              </li>
               <!-- <li class="nav-item">
                 <a href="pages/UI/navbar.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -226,23 +232,15 @@
               </li> -->
             </ul>
           </li>
-          <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-          </li>
+      <li class="nav-item">
+      <a class="nav-link" href= href="{{route('logout')}}" onclick="event.preventDefault()
+        document.getElementById('logout-form').submit();" role="button">
+        <i class="far nav-icon">Logout</i>
+      </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="Post" class="d-nore">
+          @csrf
+        </form>
+    </li>
           <!-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>

@@ -18,6 +18,10 @@
                         <input type="text" name="kode_kota" value="{{$kota->kode_kota}}" class="form-control" readonly>
                     </div>
                     <div class="form-group">
+                        <label for="">Provinsi</label>
+                        <input type="text" name="nama_provinsi" value="{{$kota->provinsi->nama_provinsi}}" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
                         <a href="{{url()->previous()}}" class="btn btn-primary">Kembali</a>
                     </div>
                 </div>

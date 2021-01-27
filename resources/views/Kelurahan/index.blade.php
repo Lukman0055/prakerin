@@ -19,7 +19,7 @@
                                 @foreach($kelurahan as $data)
                                 <tr>
                                     <td>{{$no++}}</td>
-                                    <td>{{$data->nama_kecamatan}}</td>
+                                    <td>{{$data->kecamatan->nama_kecamatan}}</td>
                                     <td>{{$data->nama_kelurahan}}</td>
                                     <td>
                                         <form action="{{route('kelurahan.destroy',$data->id)}}" method="post">
@@ -34,7 +34,7 @@
                                 @endforeach
                         </tbody>
                     </table>
-                    <a href="{{route('kecamatan.create')}}" class="btn btn-outline-dark">Tambah</a>
+                    <a href="{{route('kelurahan.create')}}" class="btn btn-outline-dark">Tambah</a>
                 </div>
             </div>
         </div>

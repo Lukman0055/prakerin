@@ -8,23 +8,23 @@
                     Edit Data
                 </div>
                 <div class="card-body">
-                    <form action="{{route('kecamatan.update',$kecamatan->id)}}" method="post">
+                    <form action="{{route('rw.update',$rw->id)}}" method="post">
                      <input type="hidden" name="_method" value="PUT">
                         @csrf
                         <div class="form-group">
-                            <label for="">Nama Kecamatan</label>
-                            <input type="text" name="nama_kecamatan" value="{{$kecamatan->nama_kecamatan}}" class="form-control" required>
+                            <label for="">Rw</label>
+                            <input type="text" name="nama_rw" value="{{$rw->nama_rw}}" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="">Kota</label>
-                            <select name="id_kota" class="form-control" id="">
-                                @foreach($kota as $data)
+                            <label for="">Kelurahan</label>
+                            <select name="id_kelurahan" class="form-control" id="">
+                                @foreach($kelurahan as $data)
                                 <option value="{{$data->id}}"
-                                @if($data->nama_kota == $kecamatan->kota->nama_kota)
+                                @if($data->nama_kelurahan == $rw->kelurahan->nama_kelurahan)
                                     selected
                                 @endif
                                 >
-                                {{$data->nama_kota}}
+                                {{$data->nama_kelurahan}}
                                 </option>
                                 @endforeach
                             </select>

@@ -9,7 +9,11 @@ class Rw extends Model
 {
     use HasFactory;
 
+    public function Kelurahan(){
+        return $this->belongsTo('App\Models\Kelurahan', 'id_kelurahan');
+    }
+
     public function Kasus(){
-        return $this->hasMany(Kasus::class);
+        return $this->hasMany('App\\Models\Kasus', 'id_rw');
     }
 }

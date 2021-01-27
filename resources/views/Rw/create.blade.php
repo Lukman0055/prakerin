@@ -8,23 +8,23 @@
                     Tambah Data
                 </div>
                 <div class="card-body">
-                    <form action="{{route('kelurahan.store')}}" method="post">
+                    <form action="{{route('rw.store')}}" method="post">
                         @csrf
                         <div class="form-group">
-                            <label for="">Nama Kelurahan</label>
-                            <input type="text" name="nama_kelurahan" class="form-control" required>
+                            <label for="">Rw</label>
+                            <input type="text" name="nama_rw" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="">Kecamatan</label>
-                            <select name="id_kecamatan" class="form-control" id="">
-                                @foreach($kecamatan as $data)
-                                <option value="{{$data->id}}">{{$data->nama_kecamatan}}</option>
+                            <label for="">Kelurahan</label>
+                            <select name="id_kelurahan" class="form-control" id="">
+                                @foreach($kelurahan as $data)
+                                <option value="{{$data->id}}">{{$data->nama_kelurahan}}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="{{url()->previous()}}" class="btn btn-primary">Kembali</a>
+                            <a href="{{url()->previous()}}" class="btn btn-primary">Kembali</a>
                         </div>
                     </form>
                 </div>

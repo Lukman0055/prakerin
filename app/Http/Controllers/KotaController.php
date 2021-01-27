@@ -27,7 +27,8 @@ class KotaController extends Controller
      */
     public function create()
     {
-        return view('kota.create');
+        $provinsi = Provinsi::all();
+        return view('kota.create', compact('provinsi'));
     }
 
     /**
@@ -68,7 +69,8 @@ class KotaController extends Controller
     public function edit($id)
     {
         $kota = Kota::findOrFail($id);
-        return view('kota.edit',compact('kota'));
+        $provinsi = Provinsi::all();
+        return view('kota.edit', compact('kota','provinsi'));
     }
 
     /**
