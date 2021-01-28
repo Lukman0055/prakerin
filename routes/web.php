@@ -67,3 +67,8 @@ Route::resource('kelurahan',KelurahanController::class);
 
 use App\Http\Controllers\RwController;
 Route::resource('rw',RwController::class);
+
+use App\Http\Controllers\KasusController;
+Route::resource('kasus',KasusController::class);
+
+Route::view('states-city','livewire.home');
