@@ -33,6 +33,10 @@
                                 <input type="text" name="meninggal" class="form-control" required>
                             </div>
                             <div class="form-group">
+                                <label for="">Tanggal</label>
+                                <input type="date" name="tanggal" class="form-control">
+                            </div>
+                            <div class="form-group">
                                 <button type="submit" class="btn btn-primary">Simpan</button>
                                 <a href="{{url()->previous()}}" class="btn btn-primary">Kembali</a>
                             </div>

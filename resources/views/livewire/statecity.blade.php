@@ -40,4 +40,18 @@
             </div>
         </div>
     @endif
+    @if (!is_null($selectedState3))
+        <div class="form-group row">
+            <label for="kelurahan" class="col-md-4 col-form-label text-md-right">Kelurahan</label>
+
+            <div class="col-md-6">
+                <select name="id_rw" wire:model="selectedState4" class="form-control" name="id_kecamatan">
+                    <option value="" selected>Pilih Kelurahan</option>
+                    @foreach($kelurahan as $data4)
+                        <option value="{{ $data4->id }}">{{ $data4->nama_kelurahan }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+    @endif
 </div>

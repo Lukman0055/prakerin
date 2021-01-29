@@ -20,14 +20,16 @@
                                 @php $no=1; @endphp
                                 @foreach($kasus as $data)
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>{{$no++}}</td>
+                                    <td>{{$data->rw->nama_rw}}</td>
+                                    <td>{{$data->positif}}</td>
+                                    <td>{{$data->sembuh}}</td>
+                                    <td>{{$data->meninggal}}</td>
+                                    <td>{{$data->tanggal}}</td>
                                     <td>
                                         <form action="{{route('kasus.destroy',$data->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            <a href="{{route('kasus.show',$data->id)}}" class="btn btn-outline-dark">Lihat</a> |
                                             <a href="{{route('kasus.edit',$data->id)}}" class="btn btn-outline-dark">Edit</a> |
                                             <button type="submit" onclick="return confirm('Aapakah Anda Yakin?')" class="btn btn-outline-danger">Hapus</button>
                                         </form>
