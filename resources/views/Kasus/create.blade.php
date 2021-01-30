@@ -17,20 +17,16 @@
                             @livewireScripts
 
                             <div class="form-group">
-                                <label for="">Rw</label>
-                                <input type="text" name="nama_rw" class="form-control" required>
-                            </div>
-                            <div class="form-group">
                                 <label for="">Jumlah Positif</label>
-                                <input type="text" name="positif" class="form-control" required>
+                                <input type="number" max="9999" name="positif" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="">Jumlah Sembuh</label>
-                                <input type="text" name="sembuh" class="form-control" required>
+                                <input type="number" max="9999" name="sembuh" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="">Jumlah Meninggal</label>
-                                <input type="text" name="meninggal" class="form-control" required>
+                                <input type="number" max="9999" name="meninggal" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="">Tanggal</label>

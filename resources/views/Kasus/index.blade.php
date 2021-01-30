@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table">
@@ -21,7 +21,13 @@
                                 @foreach($kasus as $data)
                                 <tr>
                                     <td>{{$no++}}</td>
-                                    <td>{{$data->rw->nama_rw}}</td>
+                                    <td>
+                                        {{$data->rw->nama_rw}}<br>
+                                        {{$data->rw->kelurahan->nama_kelurahan}}<br>
+                                        {{$data->rw->kelurahan->kecamatan->nama_kecamatan}}<br>
+                                        {{$data->rw->kelurahan->kecamatan->kota->nama_kota}}<br>
+                                        {{$data->rw->kelurahan->kecamatan->kota->provinsi->nama_provinsi}}
+                                    </td>
                                     <td>{{$data->positif}}</td>
                                     <td>{{$data->sembuh}}</td>
                                     <td>{{$data->meninggal}}</td>

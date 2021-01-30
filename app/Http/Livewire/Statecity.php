@@ -48,12 +48,14 @@ class Statecity extends Component
                 $this->kecamatan = Kecamatan::where('id_kota', $rw->kelurahan->kecamatan->id_kota)->get();
                 $this->kota = Kota::where('id_provinsi', $rw->kelurahan->kecamatan->kota->id_provinsi)->get();
 
-                $this->provinsi = $rw->kelurahan->kecamatan->kota->id_provinsi;
-                $this->kota = $rw->kelurahan->kecamatan->id_kota;
-                $this->kecamatan = $rw->kelurahan->id_kecamatan;
-                $this->kelurahan = $rw->id_kelurahan;
-                $this->rw = $rw->id_rw;
-                
+                $this->selectedState = $rw->kelurahan->kecamatan->kota->id_provinsi;
+                $this->selectedState2 = $rw->kelurahan->kecamatan->id_kota;
+                $this->selectedState3 = $rw->kelurahan->id_kecamatan;
+                $this->selectedState4 = $rw->id_kelurahan;
+                $this->selectedState5 = $rw->id;
+                if ($cek == 1) {
+                    $this->cek1 = $cek;
+                }
             }
         }
     }
@@ -82,7 +84,7 @@ class Statecity extends Component
     }
     public function updatedSelectedState3($kecamatan)
     {
-        $this->kelurahan = Kelurahan::where('id_kelurahan', $kecamatan)->get();
+        $this->kelurahan = Kelurahan::where('id_kecamatan', $kecamatan)->get();
         $this->selectedState4 = NULL;
         $this->selectedState5 = NULL;
     }

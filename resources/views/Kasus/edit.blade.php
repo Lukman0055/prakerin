@@ -1,22 +1,21 @@
 @extends('layouts.master')
 @section('content')
-<div id="layoutSidenav_content">
-<main>
-<div class="mt-4">  </div>
-<div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="card border-danger">
-                    <div class="card-header bg-danger text-center">
-                        <h3>Data Kasus</h3>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                    <div class="card-header text-center">
+                        <h4>Data Kasus</h4>
                     </div>
                     <form action="{{ route('kasus.update',$kasus->id)}}" method="post"> @method('PUT') @csrf
                         <div class="card-body">
                             <div class="row">
                
                                     <div class="col">
-                                        @livewire('statecity', ['idt' => $kasus->id])
+                                        @livewire('statecity', ['idt' => $kasus->id, 'id_rw' => $kasus->id_rw])
                                     </div>
+
                                     <div class="col">
                                         <div class=" mr-auto">
                                             <div class="form-group">
@@ -44,7 +43,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            <input type="submit" class="btn btn-lg btn-warning m-3 float-left" value="Edit">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                    <a href="{{url()->previous()}}" class="btn btn-success">Kembali</a>
+                                </div>
                         </form>
                         </div>
                     </div>

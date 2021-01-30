@@ -81,7 +81,7 @@ class RwController extends Controller
     public function update(Request $request, $id)
     {
         $rw = Rw::findOrFail($id);
-        $rw->nama_rw = $request->nama_rw;
+        $rw->id_rw = $request->id_rw;
         $rw->id_kelurahan = $request->id_kelurahan;
         $rw->save();
         return redirect()->route('rw.index')->with(['message'=>'Rw berhasil di edit']);
