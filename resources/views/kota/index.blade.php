@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-13">
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table">
@@ -10,7 +10,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Nama Kota</th>
-                                <th>Kode Kota</th>
+                                <th>Kode</th>
                                 <th>Provinsi</th>
                                 <th>Aksi</th>
                             </tr>
@@ -27,8 +27,8 @@
                                         <form action="{{route('kota.destroy',$data->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            <a href="{{route('kota.show',$data->id)}}" class="btn btn-outline-dark">Lihat</a> |
-                                            <a href="{{route('kota.edit',$data->id)}}" class="btn btn-outline-dark">Edit</a> |
+                                            <a href="{{route('kota.show',$data->id)}}" class="btn btn-outline-dark">Lihat</a>|
+                                            <a href="{{route('kota.edit',$data->id)}}" class="btn btn-outline-dark">Edit</a>|
                                             <button type="submit" onclick="return confirm('Aapakah Anda Yakin?')" class="btn btn-outline-danger">Hapus</button>
                                         </form>
                                     </td>

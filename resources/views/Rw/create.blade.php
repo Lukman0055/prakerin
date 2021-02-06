@@ -12,7 +12,7 @@
                         @csrf
                         <div class="form-group">
                             <label for="">Rw</label>
-                            <input type="text" name="nama_rw" class="form-control" required>
+                            <input type="number" max="9999" name="nama_rw" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="">Kelurahan</label>

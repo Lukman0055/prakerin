@@ -17,7 +17,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">Kode Provinsi</label>
-                            <input type="text" name="kode_provinsi" value="{{$provinsi->kode_provinsi}}" class="form-control" required>
+                            <input type="number" max="9999" name="kode_provinsi" value="{{$provinsi->kode_provinsi}}" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Simpan</button>

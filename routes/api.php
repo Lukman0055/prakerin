@@ -18,7 +18,13 @@ Route::post('provinsi/update/{id}', [ProvinsiController::class, 'update']);
 Route::delete('provinsi/delete/{id}', [ProvinsiController::class, 'destroy']);
 
 //kasus
-Route::get('kasus',[ApiController::class, 'index']);
+Route::get('indonesia',[ApiController::class, 'index']);
 Route::get('provinsi',[ApiController::class, 'provinsi']);
-Route::get('kasus/{id}',[ApiController::class, 'show']);
+Route::get('indonesia/kota',[ApiController::class, 'kota']);
+Route::get('indonesia/kecamatan',[ApiController::class, 'kecamatan']);
+Route::get('indonesia/kelurahan',[ApiController::class, 'kelurahan']);
+Route::get('provinsi/{id}',[ApiController::class, 'show']);
+//country
+Route::get('global',[ApiController::class, 'global']);
+
 

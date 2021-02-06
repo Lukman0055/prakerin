@@ -16,7 +16,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">Kode Kota</label>
-                            <input type="text" name="kode_kota" class="form-control" required>
+                            <input type="number" max="9999" name="kode_kota" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="">Provinsi</label>

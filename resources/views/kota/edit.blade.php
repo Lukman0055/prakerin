@@ -12,12 +12,12 @@
                      <input type="hidden" name="_method" value="PUT">
                         @csrf
                         <div class="form-group">
-                            <label for="">Nama Provinsi</label>
+                            <label for="">Nama Kota</label>
                             <input type="text" name="nama_kota" value="{{$kota->nama_kota}}" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="">Kode Provinsi</label>
-                            <input type="text" name="kode_kota" value="{{$kota->kode_kota}}" class="form-control" required>
+                            <input type="number" max="9999" name="kode_kota" value="{{$kota->kode_kota}}" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="">Provinsi</label>
