@@ -28,3 +28,5 @@ Route::get('provinsi/{id}',[ApiController::class, 'show']);
 Route::get('global',[ApiController::class, 'global']);
 
 
+
+

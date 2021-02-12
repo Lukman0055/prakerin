@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
@@ -72,3 +69,7 @@ use App\Http\Controllers\KasusController;
 Route::resource('kasus',KasusController::class);
 
 Route::view('states-city','livewire.home');
+
+//front
+use App\Http\Controllers\ReportController;
+Route::resource('/', ReportController::class);
