@@ -49,7 +49,7 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo mr-auto"><a href="index.html">T'Covid-19</a></h1>
+            <h1 class="logo mr-auto">T'Covid-19</h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo mr-auto"><img src="{{ asset('frontend/assets/img/logo.png') }}" alt="" class="img-fluid"></a>-->
 
@@ -432,7 +432,7 @@
                                             bagian dalam, punggung, sela-sela, dan ujung-ujung jari.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('frontend/assets/img/departments-1.jpg') }}" alt=""
+                                        <img src="{{ asset('frontend/assets/img/cucit.jpg') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -449,7 +449,7 @@
                                             dengan mudah masuk ke dalam tubuh.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('frontend/assets/img/departments-2.jpg') }}" alt=""
+                                        <img src="{{ asset('frontend/assets/img/wajah.png') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -471,7 +471,7 @@
                                             tempat sampah.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('frontend/assets/img/departments-3.jpg') }}" alt=""
+                                        <img src="{{ asset('frontend/assets/img/bb.png') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -495,7 +495,7 @@
                                             orang lain, dan tidak mengadakan acara yang mengundang banyak orang.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('frontend/assets/img/departments-4.jpg') }}" alt=""
+                                        <img src="{{ asset('frontend/assets/img/masker.png') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -512,7 +512,7 @@
                                             dan tidak mengadakan acara yang mengundang banyak orang.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('frontend/assets/img/departments-5.jpg') }}" alt=""
+                                        <img src="{{ asset('frontend/assets/img/jaga.png') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -536,7 +536,7 @@
 
                     <div class="col-lg-6">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('frontend/assets/img/doctors/doctors-1.jpg') }}"
+                            <div class="pic"><img src="{{ asset('frontend/assets/img/fadlan.jpeg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Moch. Fadlan Adhila</h4>
@@ -553,7 +553,7 @@
 
                     <div class="col-lg-6 mt-4 mt-lg-0">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('frontend/assets/img/doctors/doctors-2.jpg') }}"
+                            <div class="pic"><img src="{{ asset('frontend/assets/img/hadi.jpeg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Hadi Hardiansyah</h4>
@@ -570,7 +570,7 @@
 
                     <div class="col-lg-6 mt-4">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('frontend/assets/img/doctors/doctors-3.jpg') }}"
+                            <div class="pic"><img src="{{ asset('frontend/assets/img/lukman1.jpeg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Lukman Suryana</h4>
@@ -587,7 +587,7 @@
 
                     <div class="col-lg-6 mt-4">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('frontend/assets/img/doctors/doctors-4.jpg') }}"
+                            <div class="pic"><img src="{{ asset('frontend/assets/img/raiza.jpeg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Raiza</h4>
