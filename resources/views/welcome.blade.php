@@ -59,7 +59,7 @@
                     <li><a href="#about">Data</a></li>
                     <li><a href="#services">Kontak</a></li>
                     <li><a href="#departments">Panduan</a></li>
-                    <li><a href="#doctors">Angggota</a></li>
+                    {{-- <li><a href="#doctors">Angggota</a></li> --}}
                     <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
